@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+function secondCounter(seconds) {
+        let interval = setInterval(function () {
+            if (seconds > 0) {
+                console.log("Time remaining: " + seconds + " seconds");
+                seconds--;
+            } else {
+                clearInterval(interval);
+                console.log("Time's up!");
+            }
+        }, 1000);
+    }
+
+    // Example usage: countdown from 10 seconds
+    secondCounter(10);
+</script>
+
+</html>

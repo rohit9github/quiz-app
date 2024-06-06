@@ -38,3 +38,18 @@ body{
     cursor: pointer;
     font-size: 24px;
 }
+
+.qun-box{
+    display: flex;
+    justify-content: space-between;
+}
+.qun-box #timer{
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #3498db;
+    color: #fff;
+    width: 50px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
