@@ -80,6 +80,19 @@ const submitQun = () => {
     loadQuestion()
     return;
 }
+
+const prevQun = ()=>{
+    index--;
+    loadQuestion()
+    return;
+}
+
+const nextQun = () => {
+    index++;
+    loadQuestion()
+    return;
+}
+
 const getAns = () => {
 
     let answer;
