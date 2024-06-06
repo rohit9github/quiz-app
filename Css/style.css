@@ -23,9 +23,43 @@ body{
 }
 .row{
     width: 100%;
-    padding: 32px;
-    margin-left: 0;
+    padding: 20px;
+    background-color: #3498db;
+    margin: 14px 0;
+    border-radius: 34px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
 }
+ 
+
+.row input[type="radio"] {
+    display: none;
+}
+
+.row label {
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.row input[type="radio"]:checked + label::before {
+    background-color: #fff; 
+}
+
+.row label::before {
+    content: "";
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #fff;
+    border-radius: 50%; 
+    position: absolute;
+    left: -34px;
+    top: -2px; 
+}
+
 .btn{
     width: 100%;
     padding: 15px;
